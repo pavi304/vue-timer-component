@@ -1,6 +1,12 @@
 var app = new Vue ({
   el: '#app' ,
   data: {
-    stuff: "This is what's in the Vue instance"
+    now: Date(),
+    nowTime: 0
+  },
+  methods: {
+    TimeToday(){
+      this.nowTime = new Date().getTime();
+    }
   }
 })
