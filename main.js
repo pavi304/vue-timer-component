@@ -7,7 +7,7 @@ var app = new Vue ({
   },
   methods: {
     TimeToday(){
-      this.nowTime = new Date().getTime();
+      this.nowTime = new Date().toLocaleTimeString();
     }
   }
 })
